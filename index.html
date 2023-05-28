@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="sass/main.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+   <div class="home" > 
+     <div class="logo" id="tag_close" >
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+      <svg @click="change(dgree)" class="close" xmlns="http://www.w3.org/2000/svg" width="26" height="22"><g fill="#D0D6F9" fill-rule="evenodd" ><path :d="name1"/><path :d="name2"/></g></svg>
+      <div class="home-links" :style="show">
+          <a href="./index.html" style="border-bottom: 1px solid white; color: aliceblue; font-weight: 500;"><span>00</span> HOME</a> 
+          <a href="./destination/destination-europa.html"><span>01 </span> destination</a>
+          <a href="./crew/crew-commander.html"><span>02 </span> crew</a>
+          <a href="./technology/technology-capsule.html"><span>03 </span> technology </a> 
+      </div>
+  </div>
+  <div class="home-body">
+    <div class="home-body-left">
+      <h3>So, you want to travel to </h3>
+      <h1>SPACE</h1> 
+      <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience! </p>   
+    </div>
+    <div class="home-body-right">
+      <h1>EXPLORE</h1>
+    </div>
+  </div>
+
+   </div>
+
+   <script src="./javascript/vue.js"></script>
+   <script src="./javascript/edite-vue.js"></script>
+   <script src="./javascript/link.js"></script>
+
+</body>
+</html>

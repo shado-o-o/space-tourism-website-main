@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../sass/main.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div class="home destination" > 
+    <div class="logo" id="tag_close">
+     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+     <svg @click="change(dgree)" class="close" xmlns="http://www.w3.org/2000/svg" width="26" height="22"><g fill="#D0D6F9" fill-rule="evenodd" ><path :d="name1"/><path :d="name2"/></g></svg>
+
+     <div class="home-links" :style="show">
+         <a href="../index.html"><span>00</span> HOME</a> 
+         <a href="./destination-europa.html" style="border-bottom: 1px solid white; color: aliceblue; font-weight: 500;"><span>01 </span> destination</a>
+         <a href="../crew/crew-commander.html"><span>02 </span> crew</a>
+         <a href="../technology/technology-capsule.html"><span>03 </span> technology </a> 
+   
+      
+     </div>
+ </div>
+ <div class="dest-body" id="dest_nation">
+  <div class="dest-body-left">
+    <h2><span>01</span> Pick your destination </h2>
+    <img :src="plan_img" alt="not found" srcset="">
+
+
+  </div>
+  <div class="dest-body-right">
+     <div class="links">
+       <h1 @click="change(1)":style="name1">Europa</h1>
+       <h1 @click="change(2)":style="name2">Mars</h1>
+       <h1 @click="change(3)":style="name3">Moon</h1>
+       <h1 @click="change(4)":style="name4">Titan</h1>
+     </div>
+     <h1>{{name}}</h1>
+     <p>{{pragraph}} </p>
+     <div class="discrb">
+      <div class="discrb-left">
+        <h6>{{avg}} </h6>
+        <h2> {{mil}}</h2>
+      </div>
+      <div class="discrb-right">
+        <h6>{{time}}</h6>
+        <h2> {{mon}}</h2>
+      </div>
+     </div>
+
+  </div>
+ </div>
+
+ 
+  </div>
+  <script src="../javascript/vue.js"></script>
+  <script src="../javascript/edite-vue.js"></script>
+  <script src="../javascript/link.js"></script>
+
+ 
+ 
+</body>
+</html>

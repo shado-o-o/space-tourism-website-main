@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../sass/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="home crew">
+      <div class="logo" id="tag_close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="24" cy="24" r="24" fill="#FFF" />
+            <path
+              fill="#0B0D17"
+              d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+            />
+          </g>
+        </svg>
+        <svg @click="change(dgree)" class="close" xmlns="http://www.w3.org/2000/svg" width="26" height="22"><g fill="#D0D6F9" fill-rule="evenodd" ><path :d="name1"/><path :d="name2"/></g></svg>
+
+
+        <div class="home-links" :style="show">
+          <a href="../index.html"><span>00</span> HOME</a>
+          <a href="../destination/destination-europa.html"><span>01 </span> destination</a>
+          <a href="./crew-commander.html" style="border-bottom: 1px solid white; color: aliceblue;font-weight: 500;"><span>02 </span> crew</a>
+          <a href="../technology/technology-capsule.html"><span>03 </span> technology </a>
+        </div>
+      </div>
+      <div class="crew-body" id="crew-other-change" >
+        <div class="crew-body-left">
+          <h2><span>{{number}} </span> {{intro}}</h2>
+          <h3>{{Flight}}</h3>
+          <h1>{{name_user}}</h1>
+          <p>{{pargraph}}</p>
+          <div class="other" >
+            <h1 @click="change(1)" :style="name1"></h1>
+            <h1 @click="change(2)" :style="name2"></h1>
+            <h1 @click="change(3)" :style="name3"></h1>
+            <h1 @click="change(4)" :style="name4"></h1>
+          </div>
+        </div>
+        <div class="crew-body-right">
+          <img :src="src_img" alt="not found" srcset="" />
+        </div>
+      </div>
+    </div>
+ 
+    <script src="../javascript/vue.js"></script>
+    <script src="../javascript/edite-vue.js"></script>
+    <script src="../javascript/link.js"></script>
+  </body>
+</html>

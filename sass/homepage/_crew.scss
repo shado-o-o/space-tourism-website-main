@@ -1,0 +1,76 @@
+.crew{
+    background-image: url('../assets/crew/background-crew-desktop.jpg'); 
+}
+.crew-body{
+    display: flex;
+    justify-content:center ;
+    .crew-body-left{
+        text-align:start;
+        width: 50%;
+        margin-top: 50px;
+        color: rgba(255, 255, 255, 0.829);
+        margin-right: -140px;
+        h2{
+            font-size: 20px;
+            font-weight: 200;
+            span{
+                font-size: 16px;
+                padding-right: 10px;
+                color: rgba(255, 255, 255, 0.384);
+            }
+        }
+        h3{
+            padding-top: 60px;
+            font-size: 25px;
+            font-weight: 200;
+            color: rgba(255, 255, 255, 0.37);
+        }
+        h1{
+            font-size: 35px;
+            font-weight: 500;
+        }
+        p{
+            padding-top: 25px;
+            width: 75%;
+            font-size: 13px;
+            font-weight: 200;
+        }
+        .other{
+            padding-top: 80px;
+            margin-left: 45px;
+            display: flex;
+            align-items: center;
+            h1{
+                margin-left: 30px;
+                width: 12px;
+                height: 12px;
+                border: 2px solid rgba(255, 255, 255, 0.473);
+                border-radius: 50%;
+                background-color: rgba(240, 248, 255, 0);
+                cursor: pointer;
+                &:hover{
+                    border: 2px solid rgb(255, 255, 255);
+                    border-radius: 50%;
+                    background-color: rgb(240, 248, 255);
+                }
+                &:active{
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .crew-body-right{
+       img{
+      
+        width: 400px;
+        height: 400px;
+        margin-top: 129px;
+        margin-right: 10px;
+       }
+
+
+    }
+ }  
+ .close{
+    display: none;
+}

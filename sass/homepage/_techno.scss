@@ -1,0 +1,90 @@
+.techno{
+    background-image: url('../assets/technology/background-technology-desktop.jpg'); 
+}
+.tech-body{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    .tech-body-left{
+        padding-left: 120px;
+        display: grid;
+        justify-content: center;
+        h2{
+            font-weight: 200;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.87);
+            span{
+                padding-right:10px ;
+                color: rgba(255, 255, 255, 0.541);
+                font-size: 18px;
+                font-family: 200;
+            }
+        }
+        .tech{
+            padding-top: 55px;
+            display: flex;
+            padding-left: 25px;
+            justify-content: center;
+            width: 75%;
+            .tech-left{
+                h1{
+                    font-size: 30px;
+                    margin-top: 25px;
+                    color: rgb(255, 255, 255);
+                    font-weight: 200;
+                    text-align: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    cursor: pointer;
+                    &:hover{
+                        background: rgba(255, 255, 255, 0.815);
+                        color: black;
+
+                    }
+                }
+            }
+            .tech-right{
+                padding-top: 23px;
+                margin-left: 45px;
+                color: rgba(255, 255, 255, 0.651);
+                h6{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                h1{
+                    font-size: 35px;
+                    font-weight: 300;
+                    color: white;
+
+                }
+                p{
+                  font-size: 13px;
+                  font-weight: 200;  
+                }
+            }
+        }
+        .tablet{
+            display: none;
+            padding-top: 50px;
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        } 
+    }
+    .tech-body-right{
+        padding-top: 50px;
+        display: block;
+       
+        img{
+            width: 300px;
+            height: 300px;
+
+        }
+    }
+}
+.close{
+    display: none;
+}
